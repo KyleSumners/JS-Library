@@ -1,5 +1,8 @@
 const container = document.querySelector('.container');
+const addBookBtn = document.querySelector('#add-book');
 const myLibrary = [];
+
+// Design the form for adding a book
 
 function Book(title, author, pages, read) {
   this.title = title;
@@ -47,3 +50,7 @@ function displayBooks(myLibrary) {
     container.appendChild(book);
   }); 
 }
+
+addBookBtn.addEventListener('click', () => {
+  document.querySelector('.menu').classList.toggle('hidden');
+});

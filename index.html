@@ -9,7 +9,52 @@
   <link href="./styles.css" rel="stylesheet">
 </head>
 <body>
-  <div class="container"></div>
+  <div class="header">
+    <div class="header-background">
+      <div class="main-header">
+        <div id="top-left"></div>
+        <div id="top-mid"></div>
+        <div id="top-right"></div>
+        <div id="left"></div>
+        <div id="mid">
+          <div class="title-row">
+            <button id="add-book">Add book</button>
+            <div class="title">My Library</div>
+            <button>Sort books</button>
+          </div>
+          <div class="subtitle">You can add Your Books!</div>
+        </div>
+        <div id="right"></div>
+        <div id="bot-left"></div>
+        <div id="bot-mid"></div>
+        <div id="bot-right"></div>
+      </div>
+      <div class="menu hidden">
+        <form class="book-form">
+          <div class="form-title">Add a book</div>
+          <div class="form-input">
+            <label for="book-title">Title: </label>
+            <input type="text" id="book-title" name="book-title">
+          </div>
+          <div class="form-input">
+            <label for="book-author">Author: </label>
+            <input type="text" id="book-author" name="book-author">
+          </div>
+          <div class="form-input">
+            <label for="book-pages">Pages: </label>
+            <input type="text" id="book-pages" name="book-pages">
+          </div>
+          <div class="form-input">
+            <label for="book-read">Read? </label>
+            <input type="checkbox" id="book-read" name="book-read">
+          </div>
+          <input type="submit" class="submit-button">
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+  </div>
   
 </body>
 </html>
